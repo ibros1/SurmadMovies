@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My wonderful AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../dist/index.js" defer></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- header -->
+
+      <header class="text-3xl font-bold">
+        <h1 class="text-center">WonderfullAi</h1>
+      </header>
+
+      <div class="playground w-[40%] mx-auto border-2 shadow-xl p-4 mt-8">
+        <!-- input -->
+
+        <div class="inputContainer">
+          <input
+            type="text"
+            class="border shadow-md w-full p-3 outline-none inputEl"
+            placeholder="Ask me anything... "
+          />
+        </div>
+
+        <!-- result section -->
+
+        <div class="resultSection my-6 h-auto">
+          <p class="responseEl">Generated content</p>
+        </div>
+
+        <div class="actions">
+          <button
+            class="py-3 px-6 rounded-xl generateBtn bg-black text-white shadow-xl"
+          >
+            Generate
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
